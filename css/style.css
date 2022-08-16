@@ -14,17 +14,10 @@ body {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-<<<<<<< HEAD
-    height: 1200px;
-    width: 1600px;
-    min-width: 1000px;
-    min-height: ;
-=======
     height: 80%;
-    width: 80%;
+    width: 50%;
     min-width: 60%;
     min-height: 60%;
->>>>>>> c332a8646c4bcbe13946ff90afc31126d42d4e8b
 
 }
 
