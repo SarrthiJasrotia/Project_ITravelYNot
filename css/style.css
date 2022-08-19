@@ -1,52 +1,87 @@
 body {
     height: 100vh;
     width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center ;
-    background-image: url(world-map.jpg);
+
+    background-image: url(pexels-sibi-mathew-1092063.jpg);
     background-size: cover;
-    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
 }
 
 .mainContainer {
-    background-color: rgba(255, 255, 255, 0.1);
-    display: flex;
-    align-items: flex-end;
+    /* background-color: rgba(255, 255, 255, 0.08); */
+    display: grid;
+    /* align-items: flex-end; */
     justify-content: center;
+
     height: 80%;
-    width: 50%;
+    width: 80%;
     min-width: 60%;
     min-height: 60%;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.cardContainer {
+    margin-top: 25%;
+    /* background-color: red; */
+    text-align: center;
+
 
 }
 
 .cards {
-    
     display: inline-grid;
     grid-template-columns: 300px;
-    grid-template-rows: 210px 210px 80px;
+    grid-template-rows: 250px 80px;
     grid-template-areas: "image""text";
     border-radius: 10px;
-    background: rgba(255, 255, 255, 0.7);;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
-    font-family: roboto;
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
     text-align: center;
     margin: 20px;
+    margin-bottom: 50px;
     transition: 0.2s ease;
 }
 
 .card-image {
-    grid-area: image;
+    background-image: url(dummy3.jpg);
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .card-text {
-    grid-area: text;
     
+    font-family: 'Londrina Shadow', cursive;
+
 }
 
-.cards:hover{
+.cards:hover {
     transform: scale(1.15);
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
     cursor: pointer;
+}
+
+.ask-input {
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 800px;
+    height: 100px;
+    border-radius: 30px;
+    /* border: black solid 1px; */
+    font-size: 20px;
+    text-align: center;
+    border:none;
+}
+
+.showContent {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: white;
+    margin-top: 20px;
+    display: none;
+    border-radius: 10px;
   }

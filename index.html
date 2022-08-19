@@ -6,47 +6,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap" rel="stylesheet">
     <script defer src="./js/script.js"></script>
-    <title>Document</title>
+
+    <title>ITravelYNot</title>
+    <link rel="icon" type="image/x-icon" href="css/title-icon.png">
 </head>
 
 <body>
 
     <div class="mainContainer">
-        <div class="heading"></div>
+        
 
-        <div class="cardContainer">
-            <!-- card#1 -->
-            <div class="cards">
+        <!-- asking user for the travel destination input -->
+        <input type="text"  class="ask-input"
+            placeholder="Enter the name of the destination">
 
-                <div class="card-image"></div>
-                <div class="card-text">
-                    <h1>Weather</h1>
-                </div>
+    <div class="cardContainer">
+        <!-- card#1 -->
+        <div class="cards" id="card1">
+
+            <div class="card-image" id="card-image1"></div>
+            <div class="card-text" id="card-text1">
+                <h1>Weather</h1>
             </div>
+        </div>
 
-            <!-- card#2 -->
-            <div class="cards">
+        <!-- card#2 -->
+        <div class="cards" id="card2">
 
-                <div class="card-image"></div>
-                <div class="card-text">
-                    <h1>Attractions</h1>
-                </div>
+            <div class="card-image" id="card-iamge2"></div>
+            <div class="card-text" id="card-text2">
+                <h1>Hotels</h1>
             </div>
+        </div>
 
-            <!-- card#3 -->
-            <div class="cards">
+        <!-- card#3 -->
+        <div class="cards" id="card3" >
 
-                <div class="card-image"></div>
-                <div class="card-text">
-                    <h1>Resturants</h1>
-                </div>
+            <div class="card-image" id="card-iamge3"></div>
+            <div class="card-text" id="card-text3">
+                <h1>Resturants</h1>
+            </div>
+        </div>
+
+        <!-- card#4 -->
+        <div class="cards" id="card4">
+
+            <div class="card-image" id="card-iamge4"></div>
+            <div class="card-text" id="card-text4">
+                <h1>Attractions</h1>
             </div>
         </div>
 
 
     </div>
 
+    <!-- Divs for the content to show -->
+    <div class="showContent" id="weather"> Weather Content</div>
+    <div class="showContent" id="hotels">Hotel content</div>
+    <div class="showContent" id="resturants">resturant content</div>
+    <div class="showContent" id="attractions"> Attractions Content</div>
 </body>
 
 </html>
