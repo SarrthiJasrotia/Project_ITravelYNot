@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap" rel="stylesheet">
+
+    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script defer src="./js/script.js"></script>
 
     <title>ITravelYNot</title>
@@ -18,57 +21,58 @@
 <body>
 
     <div class="mainContainer">
-        
+
 
         <!-- asking user for the travel destination input -->
-        <input type="text"  class="ask-input"
-            placeholder="Enter the name of the destination">
+        <input type="text" class="ask-input" placeholder="Enter the name of the destination">
 
-    <div class="cardContainer">
-        <!-- card#1 -->
-        <div class="cards" id="card1">
+        <div class="cardContainer">
+            <!-- card#1 -->
+            <div class="cards" id="card1">
 
-            <div class="card-image" id="card-image1"></div>
-            <div class="card-text" id="card-text1">
-                <h1>Weather</h1>
+                <div class="card-image" id="card-image1"></div>
+                <div class="card-text" id="card-text1">
+                    <h1>Weather</h1>
+                </div>
             </div>
-        </div>
 
-        <!-- card#2 -->
-        <div class="cards" id="card2">
+            <!-- card#2 -->
+            <div class="cards" id="card2">
 
-            <div class="card-image" id="card-iamge2"></div>
-            <div class="card-text" id="card-text2">
-                <h1>Hotels</h1>
+                <div class="card-image" id="card-iamge2"></div>
+                <div class="card-text" id="card-text2">
+                    <h1>Hotels</h1>
+                </div>
             </div>
-        </div>
 
-        <!-- card#3 -->
-        <div class="cards" id="card3" >
+            <!-- card#3 -->
+            <div class="cards" id="card3">
 
-            <div class="card-image" id="card-iamge3"></div>
-            <div class="card-text" id="card-text3">
-                <h1>Resturants</h1>
+                <div class="card-image" id="card-iamge3"></div>
+                <div class="card-text" id="card-text3">
+                    <h1>Resturants</h1>
+                </div>
             </div>
-        </div>
 
-        <!-- card#4 -->
-        <div class="cards" id="card4">
+            <!-- card#4 -->
+            <div class="cards" id="card4">
 
-            <div class="card-image" id="card-iamge4"></div>
-            <div class="card-text" id="card-text4">
-                <h1>Attractions</h1>
+                <div class="card-image" id="card-iamge4"></div>
+                <div class="card-text" id="card-text4">
+                    <h1>Attractions</h1>
+                </div>
             </div>
+            
+
         </div>
-
-
+        <button id="exit">Close Content</button>
     </div>
 
     <!-- Divs for the content to show -->
-    <div class="showContent" id="weather"> Weather Content</div>
-    <div class="showContent" id="hotels">Hotel content</div>
-    <div class="showContent" id="resturants">resturant content</div>
-    <div class="showContent" id="attractions"> Attractions Content</div>
+    <div class="showContent" id="weather"> DIV1</div>
+    <div class="showContent" id="hotels">DIV2</div>
+    <div class="showContent" id="resturants">DIV3</div>
+    <div class="showContent" id="attractions"> DIV4</div>
 </body>
 
 </html>

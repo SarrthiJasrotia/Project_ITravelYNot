@@ -53,7 +53,7 @@ body {
 }
 
 .card-text {
-    
+
     font-family: 'Londrina Shadow', cursive;
 
 }
@@ -73,15 +73,36 @@ body {
     /* border: black solid 1px; */
     font-size: 20px;
     text-align: center;
-    border:none;
+    border: none;
 }
 
 .showContent {
-    width: 100%;
-    padding: 50px 0;
+    height: 50%;
+    width: 80%;
+    padding: 50px 0; 
     text-align: center;
     background-color: white;
     margin-top: 20px;
     display: none;
     border-radius: 10px;
-  }
+    margin: auto;
+}
+
+#exit {
+    background-color:rgba(255, 255, 255, 0.8); ;
+    height: 40px;
+    width: 200px;
+    margin: auto;
+    display: none;
+    border-radius: 40px;
+    font-weight: bolder;
+    border: white solid 2px;
+    font-size: large;
+}
+#exit:hover{
+    border: white solid 2px;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.8);
+}

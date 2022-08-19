@@ -20,35 +20,53 @@ search.addEventListener("keyup", function(e){
 ////////  CLOSE IF ANOTHER DIV IS ASKED TO BE OPENED BY THE USER////////
 ///////////////////////////////////////////////////////////////////////
 
-document.getElementById('card1').addEventListener("click", function(){
-    document.getElementById("weather").style.display = "block";
-    document.getElementById("resturants").style.display = "none";
-    document.getElementById("attractions").style.display = "none";
-    document.getElementById("hotels").style.display = "none";
 
+//makes the weather content show while hiding the other tabs
+$("#card1").click(function(){
+    $("#weather").show();
+    $("#resturants").hide();
+    $("#attractions").hide();
+    $("#hotels").hide();
+    $("#exit").show();
 })
 
-document.getElementById('card2').addEventListener("click", function(){
-    document.getElementById("weather").style.display = "none";
-    document.getElementById("resturants").style.display = "none";
-    document.getElementById("attractions").style.display = "none";
-    document.getElementById("hotels").style.display = "block";
-
+//makes the hotels content show while hiding the other tabs
+$("#card2").click(function(){
+    $("#weather").hide();
+    $("#resturants").hide();
+    $("#attractions").hide();
+    $("#hotels").show();
+    $("#exit").show();
 })
 
-document.getElementById('card3').addEventListener("click", function(){
-    document.getElementById("weather").style.display = "none";
-    document.getElementById("resturants").style.display = "block";
-    document.getElementById("attractions").style.display = "none";
-    document.getElementById("hotels").style.display = "none";
+//makes the resturants content show while hiding the other tabs
+$("#card3").click(function(){
+    $("#weather").hide();
+    $("#resturants").show();
+    $("#attractions").hide();
+    $("#hotels").hide();
+    $("#exit").show();
+})
 
+//makes the attractions content show while hiding the other tabs
+$("#card4").click(function(){
+    $("#weather").hide();
+    $("#resturants").hide();
+    $("#attractions").show();
+    $("#hotels").hide();
+    $("#exit").show();
 })
 
 
-document.getElementById('card4').addEventListener("click", function(){
-    document.getElementById("weather").style.display = "none";
-    document.getElementById("resturants").style.display = "none";
-    document.getElementById("attractions").style.display = "block";
-    document.getElementById("hotels").style.display = "none";
+//////////////////////////////////////////////////////////////////
+////Function to make the close content button close the div//////
+////////////////////////////////////////////////////////////////
 
+$("#exit").click(function(){
+    $("#weather").hide();
+    $("#resturants").hide();
+    $("#attractions").hide();
+    $("#hotels").hide();
+    $("#exit").hide();
 })
+
