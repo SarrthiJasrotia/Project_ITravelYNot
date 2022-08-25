@@ -113,11 +113,12 @@ video{
 }
 
 #exit {
-    margin: auto;
+    margin-top: 5%;
+    
+    margin-left: 45%;
     background-color:rgba(255, 255, 255, 0.8); 
     height: 40px;
     width: 200px;
-    margin: auto;
     display: none;
     border-radius: 40px;
     font-weight: bolder;
@@ -147,7 +148,9 @@ video{
     height: 300px;
     padding-left: 5%;
     padding-right: 5%;
-
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    border: black solid 1px;
 
 }
 
@@ -173,9 +176,10 @@ video{
     margin: auto;
     display: grid;
     margin-top: 20px;
-    
+    font-size: 20px;
     grid-template-columns: 40% 60%;
     border-radius: 20px;
+    text-align: left;
 }
 .holder div{
     background-color: #A25235;
@@ -188,30 +192,41 @@ video{
 
 
 .lodgeHeading{
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 200;
+    margin-bottom: 10%;
+    text-align: center;
 }
 #leftDiv{
-    /* background-color: #A25235; */
-    text-align: left;
-    line-height: 7em;
    
+    padding: 5%;
+    text-align: left;
+    line-height: 6em;
+    border-radius: 30px;
 }
 #rightDiv{
-    /* background-color: #DCB28D; */
+    
     text-align: right;
-    line-height: 7em;
+    line-height: 6em;
+    padding: 5%;
+    border-radius: 30px;
 }
 
 #centerDiv{
     font-size: 30px;
-    /* background-color: aqua; */
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    width:80% ;
+    height: 90%;
     text-align: center;
-    
+    margin: auto;
+    margin-top: -10px;
     font-weight: 200;
+    border: black solid 10px;
 }
 #centerDiv h3{
     font-size: 25px;
+    
 }
 /* .imgDiv{
     background-image: url(dummy3.jpg);
@@ -257,4 +272,14 @@ video{
      height: 200px;
      width: 200px;
      margin-top: 10%;
+ }
+ #weatherIcon{
+    height: 200px;
+    margin-top: -50px;
+ }
+ #wDescription{
+    margin-top: -40px;
+ }
+ #feelsLike{
+    margin-top: -50px;
  }

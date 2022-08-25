@@ -1,6 +1,6 @@
 
 
-///////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////
 ///TAKES THE INPUT AND ON PRESS OF ENTER PUSHES TO THE FUNCTIONS///
 ///////////////////////////////////////////////////////////////////
 
@@ -102,13 +102,18 @@ let $location = $("#wLocation")
 let $date =$("#wDate")
 
 
+
 //weather api data pull functions
 function renderForecast(forecastData) {
-  $temp.text(forecastData.list[0].main.temp + "F")
+  
+  let icon = (forecastData.list[0].weather[0].icon)
+  let weatherIcon  = document.getElementById('weatherIcon')
+  weatherIcon.src = `http://openweathermap.org/img/wn/${icon}@2x.png`
+  $temp.text(forecastData.list[0].main.temp + "°F")
   $description.text(forecastData.list[0].weather[0].description)
   $winds.text("Wind-speed: " + forecastData.list[0].wind.speed)
   $humid.text("Humidity: " + forecastData.list[0].main.humidity)
-  $feelsLike.text("Feels like: "+ forecastData.list[0].main.feels_like+"F")
+  $feelsLike.text("Feels like: "+ forecastData.list[0].main.feels_like+"°F")
   $date.text("Date/Time: "+forecastData.list[0].dt_txt)
   $location.text("Location: "+forecastData.city.name+", "+forecastData.city.country)
 }
@@ -157,7 +162,7 @@ function renderLodging(lodgingSearch) {
       HotelFsqID.push($fsqID)
 
       headingDiv.innerHTML = ($placeName)
-      contentList.innerHTML = (`ADDRESS: ${$address}` + "<br>" + `Area: near ${$area}`)
+      contentList.innerHTML = (`ADDRESS: ${$address}` + "<br>" + `AREA: near ${$area}`)
 
     };
     makeDiv()
@@ -206,7 +211,7 @@ function renderResturants(resturantsSearch) {
      ResturantFsqID .push($fsqID)
 
       headingDiv.innerHTML = ($placeName)
-      contentList.innerHTML = (`ADDRESS: ${$address}` + "<br>" + `Area: near ${$area}`)
+      contentList.innerHTML = (`ADDRESS: ${$address}` + "<br>" + `AREA: near ${$area}`)
 
     };
     makeDiv()
@@ -256,7 +261,7 @@ function renderEntertainment(entertainmentSearch) {
       EntertainmentFsqID.push($fsqID)
 
       headingDiv.innerHTML = ($placeName)
-      contentList.innerHTML = (`ADDRESS: ${$address}` + "<br>" + `Area: near ${$area}`)
+      contentList.innerHTML = (`ADDRESS: ${$address}` + "<br>" + `AREA: near ${$area}`)
 
     };
     makeDiv()

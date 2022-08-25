@@ -15,18 +15,26 @@
     <script defer src="./js/script.js"></script>
 
     <title>ITravelYNot</title>
-    <link rel="icon" type="image/x-icon" href="css/title-icon.png">
+    <link id rel="icon" type="image/x-icon" href="./css/TheBoys.jpg">
 </head>
 
 <body>
+    <video autoplay loop muted>
+        <source src="Yacht.mp4" type="video/mp4">
+    </video>
 
-    <div class="mainContainer">
 
 
+
+
+
+
+    <div id="mainContainer">
         <!-- asking user for the travel destination input -->
-        <input type="text" class="ask-input" placeholder="Enter the name of the destination">
+        <input type="text" id="ask-input" placeholder="Enter the name of the destination">
+        <!-- <button onclick="testA()">TTTTTTTTTT</button> -->
 
-        <div class="cardContainer">
+        <div id="cardContainer">
             <!-- card#1 -->
             <div class="cards" id="card1">
 
@@ -39,16 +47,16 @@
             <!-- card#2 -->
             <div class="cards" id="card2">
 
-                <div class="card-image" id="card-iamge2"></div>
+                <div class="card-image" id="card-image2"></div>
                 <div class="card-text" id="card-text2">
-                    <h1>Hotels</h1>
+                    <h1>Lodging</h1>
                 </div>
             </div>
 
             <!-- card#3 -->
             <div class="cards" id="card3">
 
-                <div class="card-image" id="card-iamge3"></div>
+                <div class="card-image" id="card-image3"></div>
                 <div class="card-text" id="card-text3">
                     <h1>Resturants</h1>
                 </div>
@@ -57,22 +65,54 @@
             <!-- card#4 -->
             <div class="cards" id="card4">
 
-                <div class="card-image" id="card-iamge4"></div>
+                <div class="card-image" id="card-image4"></div>
                 <div class="card-text" id="card-text4">
-                    <h1>Attractions</h1>
+                    <h1>Entertainment</h1>
                 </div>
             </div>
-            
 
         </div>
-        <button id="exit">Close Content</button>
+
+       
+
+
+    </div>
+    
+    <button id="exit">Close Content</button>
+   
+    <!-- Divs for the content to show -->
+    <div class="showContent" id="weather"> 
+        <div id="mainWeather">
+            <div id="leftDiv"><h2 id="wDate"></h2> <h2 id="wLocation"></h2>
+                
+            </div>
+            <div id="centerDiv"><h1 id="temp">
+                
+            </h1>
+                <h3 id="feelsLike"></h3>
+                <img id="weatherIcon" src="" alt="icon">
+                <h3 id="wDescription">Enter A valid Search</h3>
+               
+            </div>
+           <div id="rightDiv"><h2 id="humid"></h2>
+            <h2 id="winds"></h2>
+        </div>
+       
+    </div>
+        
+
+    </div>
+    <div class="showContent" id="hotels">
+        
     </div>
 
-    <!-- Divs for the content to show -->
-    <div class="showContent" id="weather"> DIV1</div>
-    <div class="showContent" id="hotels">DIV2</div>
-    <div class="showContent" id="resturants">DIV3</div>
-    <div class="showContent" id="attractions"> DIV4</div>
+    <div class="showContent" id="resturants">DIV</div>
+    
+    <div class="showContent" id="entertainment"> DIV4</div>
+
+    <footer>
+        
+      </footer>
 </body>
 
 </html>
