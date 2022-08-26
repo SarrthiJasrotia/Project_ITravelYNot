@@ -279,7 +279,7 @@ function submit() {
 
   /////////////// OPENWEATHERMAP API//////////////////
   const apiURL =
-    `http://api.openweathermap.org/data/2.5/forecast?q=${searchInput}&appid=302ce008a859e78f1d04788d36a5333c&units=imperial`;
+    `http://api.openweathermap.org/data/2.5/forecast?q=${searchInput}&appid=12aabd14ed21e79a7e16a28c625739e7&units=imperial`;
   console.log("weather results = " + apiURL)
   $.ajax({
     url: apiURL
@@ -380,7 +380,7 @@ function photoUrl() {
       method: 'GET',
       headers: {
         Accept: 'application/json',
-        Authorization: 'fsq3MCnwDwY4yhkQdx3SrPE9HNMgwrp1eJ1Wvz/FePWbGS0='
+        Authorization: 'fsq3NIv2q1lvpmrzH4jYCQBTdVfl4bc7dtrTHR5bdTIu6Ms='
       }
     }).then(
       (photosSearchH) => {
@@ -417,7 +417,7 @@ function photoUrlR() {
       method: 'GET',
       headers: {
         Accept: 'application/json',
-        Authorization: 'fsq3MCnwDwY4yhkQdx3SrPE9HNMgwrp1eJ1Wvz/FePWbGS0='
+        Authorization: 'fsq3NIv2q1lvpmrzH4jYCQBTdVfl4bc7dtrTHR5bdTIu6Ms='
       }
     }).then(
       (photosSearchR) => {
@@ -451,7 +451,7 @@ function photoUrlE() {
       method: 'GET',
       headers: {
         Accept: 'application/json',
-        Authorization: 'fsq3MCnwDwY4yhkQdx3SrPE9HNMgwrp1eJ1Wvz/FePWbGS0='
+        Authorization: 'fsq3NIv2q1lvpmrzH4jYCQBTdVfl4bc7dtrTHR5bdTIu6Ms='
       }
     }).then(
       (photosSearchE) => {
