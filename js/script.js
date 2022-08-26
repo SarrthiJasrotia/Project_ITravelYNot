@@ -20,6 +20,8 @@ search.addEventListener("keyup", function (e) {
     resturantDiv.innerHTML = '';
     entertainmentDiv.innerHTML = '';
     HotelFsqID =[];
+    EntertainmentFsqID=[];
+    ResturantFsqID = [];
     
   }
 });
