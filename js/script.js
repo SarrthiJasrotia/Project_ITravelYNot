@@ -281,7 +281,7 @@ function submit() {
 
   /////////////// OPENWEATHERMAP API//////////////////
   const apiURL =
-    `http://api.openweathermap.org/data/2.5/forecast?q=${searchInput}&appid=12aabd14ed21e79a7e16a28c625739e7&units=imperial`;
+    `https://api.openweathermap.org/data/2.5/forecast?q=${searchInput}&appid=12aabd14ed21e79a7e16a28c625739e7&units=imperial`;
   console.log("weather results = " + apiURL)
   $.ajax({
     url: apiURL
